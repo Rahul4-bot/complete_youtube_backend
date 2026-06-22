@@ -19,12 +19,12 @@ app.use(express.urlencoded({
         extended: true,
         limit: "16kb"
 
-    })), // yeah configuration url ko encode krne ke liye kyi baar plus aata h kyi baar nhi aata 
+    })), // yeah configuration url ko encode krne ke liye kyi baar plus aata h kyi baar nhi aata url ke uncoder batata h
 
 
     app.use(express.static("public")) // public asset jo koi bhi acces kr ske majorly 3 cofiguration milte h
 app.use(cookieParser())
 
-
+// (err,req,res,next)
 
 export { app }
