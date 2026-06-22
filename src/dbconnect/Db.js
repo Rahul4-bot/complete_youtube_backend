@@ -14,3 +14,11 @@ const Connectiondb = async() => {
 }
 
 export default Connectiondb();
+then(() => {
+        app.listen(process.env.port || 8000, () => {
+            console.log("server is running on port: ${process.env.PORT}");
+        })
+    })
+    .catch((err) => {
+        console.log("MONGO DB CONNECTION FAILED !!! ", err);
+    })
