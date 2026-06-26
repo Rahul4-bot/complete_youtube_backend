@@ -5,6 +5,7 @@ import dotenv from "dotenv"
 import mongoose from "mongoose";
 
 import Connectiondb from "./dbconnect/Db.js";
+import { app } from "./app.js";
 
 
 dotenv.config({
@@ -13,7 +14,7 @@ dotenv.config({
 
 
 
-Connectiondb()
+Connectiondb
     .then(() => {
         app.listen(process.env.PORT || 8000, () => {
             console.log(`server is running at the port : ${process.env.PORT}`);

@@ -1,4 +1,4 @@
-// http course server or app baat krte h
+<!-- // http course server or app baat krte h
 
 http headers =  meta data :- key along sent along with request and response 
 
@@ -44,4 +44,27 @@ http status code
 201 created
 202 accepted
 400 bad request
-404 not found
+404 not found 
+
+middleware controler or request ke bich ke checkpoint
+
+models database me data kis format me store hoga 
+
+routes url manage krta h
+
+
+Request
+   ↓
+Route
+   ↓
+Middleware
+   ↓
+Controller
+   ↓
+Model
+   ↓
+MongoDB
+   ↓
+Response 
+
+Controller is responsible for handling incoming requests, executing business logic, interacting with models/database, and sending responses back to the client. -->
